@@ -8,15 +8,27 @@ public class Metode {
 	//Ponasanje
 	
 	public int duzina(String recenica) {
-		// Implementirati metodu koja vraca duzinu stringa
+		int duzina = recenica.length();
+		
+		return duzina;
 	}
 	
 	public void karakteriNaNeparnimPozicijama(String recenica) {
-		//Implementirati metodu koja ispisuje karaktere na neparnim pozicijama
+		System.out.print("Karakteri na neparnim pozicijama su: ");
+		for (int i = 0; i < recenica.length(); i++) {
+			if (i % 2 != 0) {
+				System.out.print(recenica.charAt(i) + " ");
+			}
+		}
 	}
 	
 	public void karakteriNaParnimPozicijama(String recenica) {
-		//Implementirati metodu koja ispisuje sve karaktere na parnim pozicijama
+		System.out.print("Karakteri na parnim pozicijama su: ");
+		for (int i = 0; i < recenica.length(); i++) {
+			if (i % 2 == 0) {
+				System.out.print(recenica.charAt(i) + " ");
+			}
+		}
 	}
 	
 	public int uppercaseKarakteri(String recenica) {
